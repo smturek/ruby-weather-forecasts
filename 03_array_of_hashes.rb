@@ -51,3 +51,6 @@ forecast = [
 ]
 
 #----- your code below -----
+forecast.each do |day_hash|
+  p "#{day_hash["day"]} - High: #{day_hash["temperatures"]["high"]}, Low: #{day_hash["temperatures"]["low"]}"
+end

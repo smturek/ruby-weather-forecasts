@@ -18,3 +18,6 @@ forecast = {
 }
 
 #----- Put your code below here -----
+forecast.each do |day, temps|
+  p "#{day} - High: #{temps.max}, Low: #{temps.min}"
+end
